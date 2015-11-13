@@ -39,7 +39,8 @@
     showErrorTabLine: true
     showErrorTabFile: false
     showErrorInline: false
-  tabs: {}
+  tabs:
+      usePreviewTabs: true
   "markdown-preview": {}
   "linter-rubocop":
     command: ""
