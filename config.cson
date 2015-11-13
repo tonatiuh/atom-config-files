@@ -1,0 +1,60 @@
+"*":
+  "exception-reporting":
+    userId: ""
+  welcome:
+    showOnStartup: false
+  core:
+    audioBeep: false
+    packagesWithKeymapsDisabled: [
+      "terminal-plus"
+    ]
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Monaco"
+    scrollPastEnd: true
+  term2:
+    cursorBlink: false
+  "vim-mode": {}
+  "ruby-test":
+    cucumberAllCommand: "bundle exec spring cucumber --color "
+    cucumberFileCommand: "bundle exec spring cucumber --color {relative_path}"
+    rspecAllCommand: "bundle exec spring rspec"
+    rspecFileCommand: "bundle exec spring rspec {relative_path}"
+    rspecSingleCommand: "bundle exec spring rspec {relative_path}:{line_number}"
+    cucumberSingleCommand: "bundle exec spring cucumber --color {relative_path}:{line_number}"
+  "terminal-plus":
+    core: {}
+    style:
+      fontFamily: "Monaco"
+      animationSpeed: 1.5
+  "linter-ruby": {}
+  linter:
+    statusIconScope: "File"
+    showErrorTabProject: false
+    lintOnFly: false
+    showErrorTabLine: true
+    showErrorTabFile: false
+    showErrorInline: false
+  tabs: {}
+  "markdown-preview": {}
+  "linter-rubocop":
+    command: ""
+  "tree-view": {}
+  "fuzzy-finder":
+    useAlternateScoring: true
+  "advanced-open-file":
+    defaultInputValue: "Project root"
+  "atom-material-ui":
+    ui: {}
+    tabs:
+      tabMinWidth: true
+      showTabIcons: "Show on all tabs"
+      tabSize: "Small"
+    fonts: {}
+    panels: {}
+    treeView:
+      compactTreeView: true
