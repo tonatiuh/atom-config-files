@@ -14,8 +14,11 @@
     ]
   editor:
     invisibles: {}
-    fontFamily: "Monaco"
+    fontFamily: "Roboto Mono"
     scrollPastEnd: true
+    softTabs: false
+    tabType: "soft"
+    showIndentGuide: true
   term2:
     cursorBlink: false
   "vim-mode": {}
@@ -27,10 +30,90 @@
     rspecSingleCommand: "bundle exec spring rspec {relative_path}:{line_number}"
     cucumberSingleCommand: "bundle exec spring cucumber --color {relative_path}:{line_number}"
   "terminal-plus":
-    core: {}
+    core:
+      workingDirectory: "Home"
     style:
-      fontFamily: "Monaco"
+      fontFamily: "Roboto Mono"
       animationSpeed: 1.5
+    ansiColors:
+      normal:
+        cyan:
+          red: 139
+          green: 233
+          blue: 253
+          alpha: 1
+        green:
+          red: 90
+          green: 247
+          blue: 142
+          alpha: 1
+        blue:
+          red: 202
+          green: 169
+          blue: 250
+          alpha: 1
+        red:
+          red: 255
+          green: 110
+          blue: 103
+          alpha: 1
+        yellow:
+          red: 244
+          green: 249
+          blue: 157
+          alpha: 1
+        magenta:
+          red: 255
+          green: 146
+          blue: 208
+          alpha: 1
+        white:
+          red: 199
+          green: 199
+          blue: 199
+          alpha: 1
+      zBright:
+        brightBlue:
+          red: 202
+          green: 169
+          blue: 250
+          alpha: 1
+        brightGreen:
+          red: 90
+          green: 247
+          blue: 142
+          alpha: 1
+        brightYellow:
+          red: 244
+          green: 249
+          blue: 157
+          alpha: 1
+        brightRed:
+          red: 255
+          green: 110
+          blue: 103
+          alpha: 1
+        brightMagenta:
+          red: 255
+          green: 146
+          blue: 208
+          alpha: 1
+        brightCyan:
+          red: 154
+          green: 237
+          blue: 254
+          alpha: 1
+        brightBlack:
+          red: 104
+          green: 104
+          blue: 104
+          alpha: 1
+    iconColors:
+      blue:
+        red: 0
+        green: 92
+        blue: 187
+        alpha: 1
   "linter-ruby": {}
   linter:
     statusIconScope: "File"
@@ -39,8 +122,9 @@
     showErrorTabLine: true
     showErrorTabFile: false
     showErrorInline: false
+    underlineIssues: false
   tabs:
-      usePreviewTabs: true
+    usePreviewTabs: true
   "markdown-preview": {}
   "linter-rubocop":
     command: ""
@@ -55,7 +139,12 @@
       tabMinWidth: true
       showTabIcons: "Show on all tabs"
       tabSize: "Small"
-    fonts: {}
+    fonts:
+      useRobotoInUI: true
     panels: {}
     treeView:
       compactTreeView: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
