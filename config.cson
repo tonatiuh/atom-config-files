@@ -22,19 +22,13 @@
   term2:
     cursorBlink: false
   "vim-mode": {}
-  "ruby-test":
-    cucumberAllCommand: "bundle exec spring cucumber --color "
-    cucumberFileCommand: "bundle exec spring cucumber --color {relative_path}"
-    rspecAllCommand: "bundle exec spring rspec"
-    rspecFileCommand: "bundle exec spring rspec {relative_path}"
-    rspecSingleCommand: "bundle exec spring rspec {relative_path}:{line_number}"
-    cucumberSingleCommand: "bundle exec spring cucumber --color {relative_path}:{line_number}"
   "terminal-plus":
     core:
       workingDirectory: "Home"
     style:
-      fontFamily: "Roboto Mono"
       animationSpeed: 1.5
+      fontFamily: "Roboto Mono"
+      defaultPanelHeight: "90%"
     ansiColors:
       normal:
         cyan:
@@ -59,8 +53,8 @@
           alpha: 1
         yellow:
           red: 244
-          green: 249
-          blue: 157
+          green: 173
+          blue: 0
           alpha: 1
         magenta:
           red: 255
@@ -85,8 +79,8 @@
           alpha: 1
         brightYellow:
           red: 244
-          green: 249
-          blue: 157
+          green: 237
+          blue: 0
           alpha: 1
         brightRed:
           red: 255
@@ -125,12 +119,14 @@
     underlineIssues: false
   tabs:
     usePreviewTabs: true
-  "markdown-preview": {}
+  "markdown-preview":
+    useGitHubStyle: true
   "linter-rubocop":
     command: ""
   "tree-view": {}
   "fuzzy-finder":
     useAlternateScoring: true
+    preserveLastSearch: true
   "advanced-open-file":
     defaultInputValue: "Project root"
   "atom-material-ui":
@@ -148,3 +144,4 @@
     ignoreWhitespaceOnCurrentLine: false
   "find-and-replace":
     closeFindPanelAfterSearch: true
+    focusEditorAfterSearch: true

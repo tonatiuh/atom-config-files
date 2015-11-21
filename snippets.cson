@@ -31,11 +31,25 @@
 '.source.ruby':
   'rspec focus':
     'prefix': 'focus'
-    'body': ', focus: true'
+    'body': 'focus: true'
+
+  'rspec let!':
+    'prefix': 'let!'
+    'body': 'let!(:$1) { $2 }'
+
+  'rspec describe':
+    'prefix': 'describe'
+    'body': """
+      require 'spec_helper'
+
+      describe $1, '$2' do
+        $3
+      end
+    """
 
 '.text.gherkin.feature':
   'debug':
-    'prefix': 'debug'
+    'prefix': 'pry'
     'body': 'When I debug'
 
 '.source.js':
